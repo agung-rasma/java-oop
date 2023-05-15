@@ -1,9 +1,9 @@
 public class PersonApp {
     public static void main(String[] args) {
 
-        Person person1 = new Person();
-        person1.name="Agung";
-        person1.address="Marga";
+        Person person1 = new Person("Agung", "Marga");
+//        person1.name="Agung";
+//        person1.address="Marga";
         //person1.country="Bali";
 
         System.out.println(person1.name);
@@ -13,7 +13,7 @@ public class PersonApp {
         person1.sayHello("Johan");
 
 
-        Person person2 = new Person();
+        Person person2 = new Person("Made");
         Person person3 = new Person();
         person3.name="Wayan";
         person3.sayHello("Mike");
