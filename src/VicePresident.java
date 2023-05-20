@@ -1,6 +1,6 @@
-class VicePresident extends Manager{
+class VicePresident extends Manager {
 
-    VicePresident(String name){
+    VicePresident(String name) {
         super(name);
     }
 
@@ -9,7 +9,7 @@ class VicePresident extends Manager{
 //        super(name, null);
 //    }
 //    method overriding
-    void sayHello(String name){
-        System.out.println("Hi "+name+" My Name Is VP "+this.name);
+    void sayHello(String name) {
+        System.out.println("Hi " + name + " My Name Is VP " + this.name);
     }
 }
