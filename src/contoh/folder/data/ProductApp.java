@@ -17,5 +17,8 @@ public class ProductApp {
         System.out.println(product.price);
 
         System.out.println(product);
+
+        Product product1 = new Product("Tesla Model 3", 1_000_000_000);
+        System.out.println(product.equals(product1));
     }
 }
