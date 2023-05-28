@@ -1,5 +1,6 @@
 package contoh.folder.aplikasi;
 
+import contoh.folder.data.Application;
 import contoh.folder.data.Constant;
 import contoh.folder.data.Country;
 import contoh.folder.util.MathUtil;
@@ -15,5 +16,7 @@ public class StaticApp {
         city.setName("Marga");
 
         System.out.println(city.getName());
+
+        System.out.println(Application.PROCESSORS);
     }
 }
