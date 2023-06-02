@@ -13,13 +13,17 @@ public class EnumApp {
         System.out.println(customer.getLevel());
         System.out.println(customer.getLevel().getDescription());
 
-//        String levelName = Level.VIP.name();
-//        System.out.println(levelName);
-//
-//        Level level = Level.valueOf("PREMIUM"); //Must True Value
-//        System.out.println(level);
-//
-//        Level[] levels=Level.values();
-//        System.out.println(levels);
+        String levelName = Level.VIP.name();
+        System.out.println(levelName);
+
+        Level level = Level.valueOf("PREMIUM"); //Must True Value
+        System.out.println(level);
+
+        Level[] levels = Level.values();
+        System.out.println(levels);
+
+        for (Level value : levels) {
+            System.out.println(value);
+        }
     }
 }
