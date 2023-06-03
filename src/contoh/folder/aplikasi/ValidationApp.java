@@ -20,5 +20,8 @@ public class ValidationApp {
 //            System.out.println("Null Error " + e.getMessage());
 //        }
 
+        LoginRequest loginRequest1 = new LoginRequest(null, null);
+        ValidationUtil.validateRuntime(loginRequest1);
+        System.out.println("Sukses");
     }
 }
