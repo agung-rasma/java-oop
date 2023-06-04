@@ -1,5 +1,8 @@
 package contoh.folder.data;
 
+import contoh.folder.annotation.Fancy;
+
+@Fancy(name = "AnimalApp", tags = {"Application", "Java"})
 public enum Level {
     STANDAR("Standard Level"),
     PREMIUM("Premium Level"),
