@@ -6,10 +6,8 @@ import java.io.IOException;
 
 public class ReadApp {
     public static void main(String[] args) {
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader("RE1ADME.md"));
 
+        try (BufferedReader reader = new BufferedReader(new FileReader("README.md"))) {
             while (true) {
                 String line = reader.readLine();
                 if (line == null) {
@@ -19,15 +17,6 @@ public class ReadApp {
             }
         } catch (Throwable throwable) {
             System.out.println("Error membaca file " + throwable.getMessage());
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                    System.out.println("tutup");
-                }
-            } catch (IOException exception) {
-                System.out.println("Error menutup resource " + exception.getMessage());
-            }
         }
     }
 }
